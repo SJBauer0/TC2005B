@@ -9,27 +9,29 @@ let table = () => {
   const strArr = [];
   for (let i = 0; i < arr1.length; i++) {
     let string = `<tr>
-        <td>${arr1[i]}</td>
-        <td>${arr1[i] ** 2}</td>
-        <td>${arr1[i] ** 3}</td>
+        <td class="border border-slate-700 p-4">${arr1[i]}</td>
+        <td class="border border-slate-700 p-4">${arr1[i] ** 2}</td>
+        <td class="border border-slate-700 p-4">${arr1[i] ** 3}</td>
     </tr>`;
     strArr.push(string);
   }
 
   const table1 = document.write(
-    `<table>
+    `<div class="text-center grid justify-items-center p-10">
+    <table>
     <caption>Cuadrados y Cubos</caption>
     <thead>
         <tr>
-            <th>Numero</th>
-            <th>Cuadrado</th>
-            <th>Cubo</th>
+            <th class="border border-slate-700 p-4 bg-slate-50">Numero</th>
+            <th class="border border-slate-700 p-4 bg-slate-50">Cuadrado</th>
+            <th class="border border-slate-700 p-4 bg-slate-50">Cubo</th>
         </tr>
     </thead>
     <tbody>
         ${strArr.toString()}
     </tbody>
-   </table>`
+   </table>
+   </div>`
   );
 };
 
@@ -67,9 +69,9 @@ let contador = () => {
     }
   }
 
-  document.write(` <h1> Numeros Positivos: ${numpos} </h1>`);
-  document.write(`<h1> Numeros Negativos: ${numneg} </h1>`);
-  document.write(` <h1>Cantidad de 0: ${ceros} </h1>`);
+  document.write(`<hr> <h1 class="p-10"> Numeros Positivos: ${numpos} </h1>`);
+  document.write(`<h1 class="p-10"> Numeros Negativos: ${numneg} </h1>`);
+  document.write(` <h1 class="p-10">Cantidad de 0: ${ceros} </h1><hr>`);
 };
 
 let promedios = () => {
@@ -87,7 +89,7 @@ let promedios = () => {
     }
     suma = suma / matriz.length;
     document.write(
-      ` <h2> Promedio de suma de columa ${index + 1}: ${suma} </h2>`
+      ` <h2 class="p-10"> Promedio de suma de columa ${index + 1}: ${suma} </h2>`
     );
     suma = 0;
   }
@@ -99,8 +101,10 @@ let inverso = () => {
     var x = Math.floor(Math.random() * 15);
     numeros.push(x);
   }
-  document.write(`<h2>El arreglo es: ${numeros} </h2>`);
-  document.write(`<h2>El arreglo es: ${numeros.reverse()} </h2>`);
+  document.write(`
+  <hr>
+  <h2 class="p-10">El arreglo es: ${numeros} </h2>`);
+  document.write(`<h2 class="p-10">El arreglo es: ${numeros.reverse()} </h2> <hr>`);
 };
 
 let constructores = () => {
@@ -129,13 +133,14 @@ let constructores = () => {
   );
 
   document.write(
-    `<h2>Sorting de Nombre de las diferentes personas: ${personas} </h2>`
+    `<hr>
+    <h2 class="p-10">Sorting de Nombre de las diferentes personas: ${personas} </h2>`
   );
   document.write(
-    `<h2>Sorting de iq de las diferentes personas: ${personiq.sort()} </h2>`
+    `<h2 class="p-10">Sorting de iq de las diferentes personas: ${personiq.sort()} </h2>`
   );
   document.write(
-    `<h2>Sorting de edad de las diferentes personas: ${personage.sort()} </h2>`
+    `<h2 class="p-10">Sorting de edad de las diferentes personas: ${personage.sort()} </h2> <hr>`
   );
 };
 

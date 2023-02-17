@@ -2,20 +2,18 @@
 <html>
   <head>
     <title>Sebastian Jimenez Bauer</title>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="/src/input.css" />
   </head>
-  <link rel="stylesheet" href="style.css" />
-  <body>
-    <div>
-      <h1>Laboratorio 1.</h1>
-      <nav>Sebastian Jimenez Bauer</nav>
-      <br />
-      <a href="https://github.com/SJBauer0"> My GitHub</a>
-      <br />
-      <hr />
+  <body class="lg:px-72 sm:p-10 tracking-wide leading-8 lg:text-xl sm:text-5xl sm:tracking-wide sm:leading-loose">
+    <div class="text-center p-10">
+      <h1 class="text-blue-600 text-5xl">Laboratorio 1.</h1>
+      <nav class="p-5">Sebastian Jimenez Bauer</nav>
+      <a class="text-blue-600 font-medium underline underline-offset-1" href="https://github.com/SJBauer0"> My GitHub</a>
     </div>
     <div>
-      <h2>Contents</h2>
-      <ul>
+      <h2 class="text-center text-3xl pb-10">Contents</h2>
+      <ul class="text-blue-600 font-medium underline underline-offset-1	">
         <li>
           <a href="#1"
             >¿Cuál es la diferencia entre Internet y la World Wide Web?</a
@@ -131,7 +129,7 @@
     <br />
     <div>
       <ul>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="1">
               ¿Cuál es la diferencia entre Internet y la World Wide Web?
@@ -142,9 +140,8 @@
               coleccion de paginas web que se pueden acceder por todo el mundo
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="2"> ¿Cuáles son las partes de un URL? </strong>
             <p>
@@ -175,9 +172,8 @@
               </li>
             </ul>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="3">
               ¿Cuál es el propósito de los métodos HTTP: GET, HEAD, POST, PUT,
@@ -192,9 +188,8 @@
               modificar la informacion del servicio web.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="4">
               ¿Qué método HTTP se debe utilizar al enviar un formulario HTML,
@@ -208,9 +203,8 @@
               URL no se guardan automáticamente.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="5">
               ¿Qué método HTTP se utiliza cuando a través de un navegador web se
@@ -222,9 +216,8 @@
               los datos que necesita para cargar la página.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="6">
               Un servidor web devuelve una respuesta HTTP con código 200. ¿Qué
@@ -235,9 +228,8 @@
               indica que la solicitud ha tenido éxito y no hay ningun error!
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="7">
               ¿Es responsabilidad del desarrollador corregir un sitio web si un
@@ -249,9 +241,8 @@
               el servidor.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="8">
               ¿Es responsabilidad del desarrollador corregir un sitio web si un
@@ -265,9 +256,8 @@
               sobre error.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="9">
               ¿Qué significa que un atributo HTML5 esté depreciado o desaprobado
@@ -286,9 +276,8 @@
               <li>menu</li>
             </ul>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="10">
               ¿Cuáles son las diferencias principales entre HTML 4 y HTML5?
@@ -300,9 +289,8 @@
               conjunto de tecnologia que contiene HTML, CSS y JavaScript
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="11">
               ¿Qué componentes de estructura y estilo tiene una tabla?
@@ -336,30 +324,31 @@
               </li>
             </ul>
             <br />
-            <table>
+            <div class="text-center grid justify-items-center">
+            <table class="border-collapse border border-slate-400">
               <thead>
                 Tabla
               </thead>
               <tbody>
-                <tr style="color: rgb(58, 184, 184)">
-                  <th>Headers</th>
-                  <th>Headers</th>
+                <tr>
+                  <th class="border border-slate-700 bg-slate-50 p-4">Headers</th>
+                  <th class="border border-slate-700 bg-slate-50 p-4">Headers</th>
                 </tr>
                 <tr>
-                  <td>Columna 1</td>
-                  <td>Columna 1</td>
+                  <td class="border border-slate-700 p-4">Columna 1</td>
+                  <td class="border border-slate-700 p-4">Columna 1</td>
                 </tr>
                 <tr>
-                  <td>Row 1</td>
-                  <td>Row 2</td>
+                  <td class="border border-slate-700 p-4">Row 1</td>
+                  <td class="border border-slate-700 p-4">Row 2</td>
                 </tr>
               </tbody>
             </table>
+          </div>
             <br />
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="12">
               ¿Cuáles son los principales controles de una forma HTML5?
@@ -379,9 +368,8 @@
             <input type="color" id="favcolor" name="favcolor" value="#ff0000" />
             <br />
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="13">
               ¿Qué tanto soporte HTML5 tiene el navegador que utilizas? Puedes
@@ -394,9 +382,8 @@
               utilizando el navegador de Google Chrome.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10 ">
           <li>
             <strong id="14">
               Sobre el ciclo de vida y desarrollo de los sistemas de
@@ -420,9 +407,8 @@
               creación, pruebas y despliegue en un sistema de información.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="15">
               Como ingeniero de software ¿cuál es tu recomendación sobre el uso
@@ -434,9 +420,8 @@
               desactiva las reglas de cascada.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="16">
               Si se pone una imagen de fondo en una página HTML, ¿por qué debe
@@ -449,9 +434,8 @@
               la pagina.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="17">
               Como ingeniero de software, ¿cuál es tu recomendación al elegir
@@ -464,9 +448,8 @@
               dispositivo.
             </p>
           </li>
-          <hr />
         </div>
-        <div>
+        <div class="py-10">
           <li>
             <strong id="18">
               ¿Por qué el uso de una versión minimizada del CSS mejora el
@@ -478,15 +461,16 @@
               significa una mejora en el rendimiento.
             </p>
           </li>
-          <hr />
-        </div>
+        </div class="py-10">
       </ul>
     </div>
-    <h1>JavaScript</h1>
-    <button onclick="{sum()}">
+    <h1 class="text-center text-5xl py-20 text-blue-600">JavaScript</h1>
+    <hr>
+    <div class="grid justify-items-center p-10">
+    <button class=" rounded-full bg-cyan-500 text-white px-4" onclick="{sum()}">
       Sumar
-    </button>
-    <hr />
+    </button></div>
+    <hr>
     <script src="js.js"></script>
   </body>
 </html>
